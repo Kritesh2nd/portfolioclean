@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Process | Kritesh Thapa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5045e83b56.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+      *{box-sizing:border-box;margin:0;padding:0;font-family:'Open Sans',sans-serif;background:;}
+      *:focus{outline:none;}
+      .mainbody{height:auto;width:100%;}
+      .border{border:1px solid #000;}
+      .borderx{border:0px solid #000;}
+      .borderr{border:1px solid #f00;}
+      .borderg{border:1px solid #0f0;}
+      .borderb{border:1px solid #00f;}
+      .bordery{border:1px solid #ff0;}
+      .borderp{border:1px solid #f0f;}
+      .borderc{border:1px solid #0ff;}
+      .border0{border:1px solid #fff;}
+      .abs{position:absolute;}
+      .ins{height:100%;width:100%;}
+      .inr{height:100%;width:100%;position:relative;}
+      .rel{position:relative;}
+      .inr0{border:1px solid #f00;height:100%;width:100%;position:relative;}
+      :root{
+        --fontfamily01:'Rubik',sans-serif;
+        --fontfamily02:'Montserrat',sans-serif;
+        --colorbg:#191a1d;--colorgrey:#5b5b5b;--colorlgrey:#919191;--colorblue:#4b6cc1;
+        --borderx:0px solid #000;--border0:1px solid #000;--bordery:1px solid #ff0;
+        --borderr:1px solid #f00;--borderg:1px solid #0f0;--borderb:1px solid #00f;
+        --borderp:1px solid #f0f;--borderc:1px solid #0ff;--borderw:1px solid #fff;
+      }
+      .p1room1{height:auto;}
+      .navbar{display:inline-block;width:100%;padding:10px 50px;box-shadow:1px 0 6px rgba(0,0,0,.5);
+        position:fixed;background:#fff;z-index:10;margin-top:-60px;animation:animatenavbar .7s ease-out .1s 1;
+        animation-fill-mode:forwards;opacity:0;}
+      .navleft{width:53%;float:left;}
+      .navright{width:47%;float:left;}
+      .resnav{width:47%;float:right;display:none;}
+      .title{font-family:var(--fontfamily01);font-size:35px;display:inline-block;font-weight:400;}
+      .unorderlist{display:inline-block;list-style-type:none;}
+      .navli{display:inline-block;}
+      .navhref{display:inline-block;text-decoration:none;padding:11px 18px;color:#000;font-family:var(--fontfamily01);
+        font-size:17px;font-weight:400;transition:.2s;}
+      .navhref span{background:#000;height:0px;width:40%;bottom:6px;left:30%;transition:.2s;}
+      .navhref:hover span{box-shadow:1px 2px 3px rgba(0,0,0,1);height:1px;width:40%;bottom:8px;left:30%;}
+      .active span{box-shadow:1px 2px 3px rgba(0,0,0,1);height:1px;width:40%;bottom:8px;left:30%;}
+      @keyframes animatenavbar{
+        0%{margin-top:-60px;opacity:0;}
+        75%{opacity:1;}
+        100%{margin-top:0px;opacity:1;}
+      }
+      @media only screen and (max-width:450px){
+        .navbar{padding:10px 15px;margin-top:0;animation:none;opacity:1;}
+        .navright{display:none;}
+        .resnav{display:block;text-align:right;}
+        .barslogo{font-size:30px;padding:5px 10px;}
+      }
+      .container{height:auto;padding:0 150px;padding-top:70px;}
+      .inrcontainer{height:100%;padding-top:130px;}
+      .processtext1{font-family:var(--fontfamily01);font-size:65px;font-weight:400;text-align:center;padding-bottom:30px;}
+      .processtext2{font-family:var(--fontfamily01);font-size:33px;font-weight:300;text-align:center;padding:0 130px;
+        padding-bottom:150px;line-height:45px;}
+      @media only screen and (max-width:450px){
+        .container{padding:0 20px;padding-top:60px;}
+        .inrcontainer{height:100%;padding-top:80px;}
+        .processtext1{font-size:35px;padding:0px;padding-bottom:8px;text-align:left;font-weight:400;}
+        .processtext2{font-size:23px;padding:0px;padding-bottom:50px;text-align:left;line-height:28px;}
+      }
+      .p4room2{height:2000px;padding:0 210px;}
+      .inrp4room2{height:100%;}
+      .processtitlestep{font-family:var(--fontfamily01);font-weight:500;font-size:22px;padding:50px 0;}
+      .processcontent1{display:inline-block;}
+      .processiconbox{width:26%;float:left;padding-top:56px;text-align:center;}
+      .processdescrbox{width:74%;float:left;}
+      .processicons{font-size:100px;}
+      .processtitle1{font-family:var(--fontfamily01);font-weight:400;font-size:30px;padding-bottom:18px;}
+      .processdescr1{font-family:var(--fontfamily01);font-weight:300;font-size:22px;padding-bottom:50px;line-height:32px;}
+      @media only screen and (max-width:450px){
+        .p4room2{height:2300px;padding:0 25px;}
+        .processtitlestep{font-size:20px;padding:30px 0;}
+        .processiconbox{width:100%;padding:0;text-align:left;}
+        .processdescrbox{width:100%;}
+        .processicons{font-size:50px;padding:10px;}
+        .processtitle1{font-size:25px;padding-bottom:10px;}
+        .processdescr1{font-size:18px;padding-bottom:20px;line-height:26px;}
+      }
+      .p4room3{height:100px;display:none;}
+      @media only screen and (max-width:450px){
+
+      }
+      .floatleft{float:left;}
+      .floatright{float:right;}
+      .p1room4{height:480px;padding:0 100px;background:#101114;}
+      .inrp1room4{height:100%;}
+      .footerleft{width:65%;float:left;padding-top:140px;}
+      .footerright{width:35%;float:left;padding-top:140px;}
+      .footertext1{font-family:var(--fontfamily01);font-size:42px;font-weight:400;color:#fff;}
+      .footertext2{font-family:var(--fontfamily01);font-size:22px;font-weight:300;padding-top:30px;color:#aaa;}
+      .footerbtnbox{height:70px;margin-top:30px;}
+      .footerbtnA{text-decoration:none;padding:10px 20px;font-size:20px;font-weight:300;top:10px;left:10px;
+        color:rgba(0,0,0,0);}
+      .footerbtnB{color:#fff;text-decoration:none;padding:10px 20px;font-size:20px;font-weight:300;top:10px;left:10px;
+        background:#101114;transition:.2s;}
+      .footerbtnB:hover{top:3px;left:4px;}
+      .footerlinkbox{font-family:var(--fontfamily01);font-size:20px;font-weight:400;padding-bottom:25px;color:#aaa;
+        cursor:pointer;transition:.2s;}
+      .footerlinkbox:hover{color:#fff;}
+      .linkicon{padding:0 15px 0 5px;font-weight:300;}
+      .linkiconfb{padding:0 16px 0 10px;}
+      .footerbottom{font-family:var(--fontfamily01);font-size:18px;font-weight:300;text-align:center;padding:32px;
+        color:#fff;background:#000104;}
+      @media only screen and (max-width:450px){
+        .p1room4{height:360px;padding:0 20px;}
+        .footerleft{width:100%;padding-top:30px;}
+        .footerright{width:100%;padding-top:20px;}
+        .footertext1{font-size:33px;}
+        .footertext2{font-size:18px;padding-top:10px;}
+        .footerbtnA{display:none;}
+        .footerbtnbox{height:60px;margin-top:20px;}
+        .footerbtnB{top:0;left:0;}
+        .footerbtnB:hover{top:0;left:0;}
+        .footerlinkbox{padding-bottom:15px;font-size:18px;}
+        .footerbottom{font-size:15px;padding:24px 0;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "mainbody">
+      <div class="p1room1 p1rooms">
+        <nav class="navbar rel">
+          <div class="navleft inrnavs">
+            <h1 class="title">Sky Arts</h1>
+          </div>
+          <div class="navright inrnavs">
+            <ul class="unorderlist">
+              <li class="navli"><a href = "/portfolioclean/" class = "navhref rel"><span class="abs"></span>Home</a></li>
+              <li class="navli"><a href = "/portfolioclean/projects.html" class = "navhref rel"><span class="abs"></span>Projects</a></li>
+              <li class="navli"><a href = "/portfolioclean/services.html" class = "navhref rel"><span class="abs"></span>Services</a></li>
+              <li class="navli"><a href = "/portfolioclean/process.html" class = "navhref rel active"><span class="abs"></span>Process</a></li>
+              <li class="navli"><a href = "/portfolioclean/contact.html" class = "navhref rel"><span class="abs"></span>Contact</a></li>
+            </ul>
+          </div>
+          <div class="resnav">
+            <i class="fas fa-bars barslogo"></i>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="inrcontainer">
+            <div class="processtext1">My Process</div>
+            <div class="processtext2">
+              From wireframes to code, below is a detailed look at how I run a typical project.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p4room2 p1rooms">
+        <div class="inrp4room2">
+          <!-- ///////////////////// STEP - 1 ///////////////////// -->
+          <div class="processtitlestep">STEP 1 - GETTING STARTED</div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox">
+              <i class="far fa-file-alt processicons"></i>
+            </div>
+            <div class="processdescrbox">
+              <div class="processtitle1">Brief</div>
+              <div class="processdescr1">
+                To get a clear picture of what you need I start every project by receiving an initial 
+                brief of what you want. Having this gives me enough context to properly provide you with 
+                a proposal and ultimately tailor my services to your project goals.
+              </div>
+            </div>
+          </div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox">
+              <i class="far fa-comments processicons"></i>
+            </div>
+            <div class="processdescrbox">
+              <div class="processtitle1">Initial Chat</div>
+              <div class="processdescr1">
+                The next step is to have a quick 15-minute call so we can properly introduce ourselves and make 
+                sure we're both on the same page. This is the perfect time to let me know anything I 
+                might need to be aware of during the project. 
+              </div>
+            </div>
+          </div>
+          <!-- ///////////////////// STEP - 2 ///////////////////// -->
+          <div class="processtitlestep">STEP 2 - DESIGN</div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox floatright">
+              <i class="fas fa-vector-square processicons"></i>
+            </div>
+            <div class="processdescrbox floatleft">
+              <div class="processtitle1">Wireframes</div>
+              <div class="processdescr1">
+                Having a good set of wireframes is the bedrock of any successful website project. 
+                This is where we hammer down the layout and general functionality while always making 
+                sure the user is the primary focus.
+              </div>
+            </div>
+          </div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox floatright">
+              <i class="far fa-object-group processicons"></i>
+            </div>
+            <div class="processdescrbox floatleft">
+              <div class="processtitle1">Designs</div>
+              <div class="processdescr1">
+                This is where I apply the paint to your website. I'll take the concepts we've agreed 
+                on in the wireframes to make them look usable, modern and clean.
+              </div>
+            </div>
+          </div>
+          <!-- ///////////////////// STEP - 3 ///////////////////// -->
+          <div class="processtitlestep">STEP 3 - DEVELOPMENT & LAUNCH</div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox">
+              <i class="fas fa-code processicons"></i>
+            </div>
+            <div class="processdescrbox">
+              <div class="processtitle1">Code</div>
+              <div class="processdescr1">
+                When the coding begins there will generally be less communication from me as this is quite 
+                an involved process that doesn't require much feedback. This is where I take the visuals of 
+                your website and make them into something real that people can interact with.
+              </div>
+            </div>
+          </div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox">
+              <i class="fas fa-chalkboard-teacher processicons"></i>
+            </div>
+            <div class="processdescrbox">
+              <div class="processtitle1">Training</div>
+              <div class="processdescr1">
+                After the website has been coded but before it goes live I like to provide in-depth training. 
+                Going forward your website will be easily updatable by yourself so I'll take you through everything 
+                over the phone and even provide screencasts for you to keep.
+              </div>
+            </div>
+          </div>
+          <div class="processcontent1 processcontent">
+            <div class="processiconbox">
+              <i class="fab fa-telegram-plane processicons"></i>
+            </div>
+            <div class="processdescrbox">
+              <div class="processtitle1">Launch</div>
+              <div class="processdescr1">
+                When it's time to launch the new site I'll take care of everything. 
+                All you'll need to do is get that Tweet ready about your shiny new website!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p4room3 p1rooms">
+
+      </div>
+      <div class="p1room4 p1rooms">
+        <div class="inrp1room4">
+          <div class="footerleft">
+            <div class="footertext1">
+              Let's Work Together
+            </div>
+            <div class="footertext2">
+              Have a project you'd like to discuss?
+            </div>
+            <div class="footerbtnbox rel">
+              <a href = "#" class = "footerbtnA border0  abs">Get in Touch</a> 
+              <a href = "/portfolioclean/contact.html" class = "footerbtnB border0  abs">Get in Touch</a> 
+            </div>
+          </div>
+          <div class="footerright">
+            <div class="footerlinkbox">
+              <i class="fas fa-envelope linkicon"></i>
+              herethapamager@gmail.com
+            </div>
+            <div class="footerlinkbox">
+              <i class="fab fa-facebook-f linkicon linkiconfb"></i>
+              ON FACEBOOK
+            </div>
+            <div class="footerlinkbox">
+              <i class="fab fa-instagram linkicon"></i>
+              ON INSTAGRAM
+            </div>
+            <div class="footerlinkbox">
+              <i class="fab fa-github linkicon"></i>
+              ON GITHUB
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerbottom">
+        © 2021 Kritesh Thapa. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>

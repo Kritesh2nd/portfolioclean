@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Services | Kritesh Thapa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5045e83b56.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+      *{box-sizing:border-box;margin:0;padding:0;font-family:'Open Sans',sans-serif;background:;}
+      *:focus{outline:none;}
+      .mainbody{height:auto;width:100%;}
+      .border{border:1px solid #000;}
+      .borderx{border:0px solid #000;}
+      .borderr{border:1px solid #f00;}
+      .borderg{border:1px solid #0f0;}
+      .borderb{border:1px solid #00f;}
+      .bordery{border:1px solid #ff0;}
+      .borderp{border:1px solid #f0f;}
+      .borderc{border:1px solid #0ff;}
+      .border0{border:1px solid #fff;}
+      .abs{position:absolute;}
+      .ins{height:100%;width:100%;}
+      .inr{height:100%;width:100%;position:relative;}
+      .rel{position:relative;}
+      .inr0{border:1px solid #f00;height:100%;width:100%;position:relative;}
+      :root{
+        --fontfamily01:'Rubik',sans-serif;
+        --fontfamily02:'Montserrat',sans-serif;
+        --colorbg:#191a1d;--colorgrey:#5b5b5b;--colorlgrey:#919191;--colorblue:#4b6cc1;
+        --borderx:0px solid #000;--border0:1px solid #000;--bordery:1px solid #ff0;
+        --borderr:1px solid #f00;--borderg:1px solid #0f0;--borderb:1px solid #00f;
+        --borderp:1px solid #f0f;--borderc:1px solid #0ff;--borderw:1px solid #fff;
+      }
+      .p1room1{height:auto;}
+      .navbar{display:inline-block;width:100%;padding:10px 50px;box-shadow:1px 0 6px rgba(0,0,0,.5);
+        position:fixed;background:#fff;z-index:10;margin-top:-60px;animation:animatenavbar .7s ease-out .1s 1;
+        animation-fill-mode:forwards;opacity:0;}
+      .navleft{width:53%;float:left;}
+      .navright{width:47%;float:left;}
+      .resnav{width:47%;float:right;display:none;}
+      .title{font-family:var(--fontfamily01);font-size:35px;display:inline-block;font-weight:400;}
+      .unorderlist{display:inline-block;list-style-type:none;}
+      .navli{display:inline-block;}
+      .navhref{display:inline-block;text-decoration:none;padding:11px 18px;color:#000;font-family:var(--fontfamily01);
+        font-size:17px;font-weight:400;transition:.2s;}
+      .navhref span{background:#000;height:0px;width:40%;bottom:6px;left:30%;transition:.2s;}
+      .navhref:hover span{box-shadow:1px 2px 3px rgba(0,0,0,1);height:1px;width:40%;bottom:8px;left:30%;}
+      .active span{box-shadow:1px 2px 3px rgba(0,0,0,1);height:1px;width:40%;bottom:8px;left:30%;}
+      @keyframes animatenavbar{
+        0%{margin-top:-60px;opacity:0;}
+        75%{opacity:1;}
+        100%{margin-top:0px;opacity:1;}
+      }
+      @media only screen and (max-width:450px){
+        .navbar{padding:10px 15px;margin-top:0;animation:none;opacity:1;}
+        .navright{display:none;}
+        .resnav{display:block;text-align:right;}
+        .barslogo{font-size:30px;padding:5px 10px;}
+      }
+      .container{height:auto;padding:0 150px;padding-top:70px;}
+      .inrcontainer{height:100%;padding-top:130px;}
+      .servicetext1{font-family:var(--fontfamily01);font-size:65px;font-weight:400;text-align:center;padding-bottom:30px;}
+      .servicetext2{font-family:var(--fontfamily01);font-size:33px;font-weight:300;text-align:center;padding:0 130px;
+        padding-bottom:150px;line-height:45px;}
+      @media only screen and (max-width:450px){
+        .container{padding:0 20px;padding-top:60px;}
+        .inrcontainer{height:100%;padding-top:80px;}
+        .servicetext1{font-size:35px;padding:0px;padding-bottom:8px;text-align:left;font-weight:400;}
+        .servicetext2{font-size:23px;padding:0px;padding-bottom:50px;text-align:left;line-height:28px;}
+      }
+      .p3room2{height:780px;padding:0 100px;margin-bottom:80px;}
+      .inrp3room2{height:100%;padding:50px 100px;background:#eee;box-shadow:0 0 6px #7a7575;border-radius:3px;}
+      .serviceleftA{width:30%;float:left;padding-top:20px;}
+      .servicerightA{width:70%;float:left;padding-top:20px;}
+      .serviceicon{font-size:130px;padding:0 40px;}
+      .servicetitle1{font-family:var(--fontfamily01);font-size:40px;font-weight:400;padding-bottom:30px;}
+      .servicetitle2{font-family:var(--fontfamily01);font-size:28px;font-weight:400;padding-bottom:15px;}
+      .servicedescr1{font-family:var(--fontfamily01);font-size:22px;font-weight:300;padding-bottom:40px;line-height:35px;}
+      @media only screen and (max-width:450px){
+        .p3room2{height:830px;padding:10px;margin-bottom:20px;}
+        .inrp3room2{padding:30px 40px;}
+        .serviceleftA{width:100%;float:left;padding:0;}
+        .servicerightA{width:100%;float:left;padding-top:20px;}
+        .serviceicon{font-size:80px;padding:0;}
+        .servicetitle1{font-size:30px;padding-bottom:20px;}
+        .servicetitle2{font-size:24px;padding-bottom:8px;}
+        .servicedescr1{font-size:18px;padding-bottom:20px;line-height:26px;}
+      }
+      .p3room3{height:850px;padding:0 100px;margin-bottom:80px;}
+      .inrp3room3{height:100%;padding:50px 100px;background:#eee;box-shadow:0 0 6px #7a7575;border-radius:3px;}
+      @media only screen and (max-width:450px){
+        .p3room3{height:970px;padding:10px;margin-bottom:20px;}
+        .inrp3room3{padding:30px 40px;}
+      }
+      .p1room4{height:480px;padding:0 100px;background:#101114;}
+      .inrp1room4{height:100%;}
+      .footerleft{width:65%;float:left;padding-top:140px;}
+      .footerright{width:35%;float:left;padding-top:140px;}
+      .footertext1{font-family:var(--fontfamily01);font-size:42px;font-weight:400;color:#fff;}
+      .footertext2{font-family:var(--fontfamily01);font-size:22px;font-weight:300;padding-top:30px;color:#aaa;}
+      .footerbtnbox{height:70px;margin-top:30px;}
+      .footerbtnA{text-decoration:none;padding:10px 20px;font-size:20px;font-weight:300;top:10px;left:10px;
+        color:rgba(0,0,0,0);}
+      .footerbtnB{color:#fff;text-decoration:none;padding:10px 20px;font-size:20px;font-weight:300;top:10px;left:10px;
+        background:#101114;transition:.2s;}
+      .footerbtnB:hover{top:3px;left:4px;}
+      .footerlinkbox{font-family:var(--fontfamily01);font-size:20px;font-weight:400;padding-bottom:25px;color:#aaa;
+        cursor:pointer;transition:.2s;}
+      .footerlinkbox:hover{color:#fff;}
+      .linkicon{padding:0 15px 0 5px;font-weight:300;}
+      .linkiconfb{padding:0 16px 0 10px;}
+      .footerbottom{font-family:var(--fontfamily01);font-size:18px;font-weight:300;text-align:center;padding:32px;
+        color:#fff;background:#000104;}
+      @media only screen and (max-width:450px){
+        .p1room4{height:360px;padding:0 20px;}
+        .footerleft{width:100%;padding-top:30px;}
+        .footerright{width:100%;padding-top:20px;}
+        .footertext1{font-size:33px;}
+        .footertext2{font-size:18px;padding-top:10px;}
+        .footerbtnA{display:none;}
+        .footerbtnbox{height:60px;margin-top:20px;}
+        .footerbtnB{top:0;left:0;}
+        .footerbtnB:hover{top:0;left:0;}
+        .footerlinkbox{padding-bottom:15px;font-size:18px;}
+        .footerbottom{font-size:15px;padding:24px 0;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "mainbody">
+      <div class="p1room1 p1rooms">
+        <nav class="navbar rel">
+          <div class="navleft inrnavs">
+            <h1 class="title">Sky Arts</h1>
+          </div>
+          <div class="navright inrnavs">
+            <ul class="unorderlist">
+              <li class="navli"><a href = "/portfolioclean/" class = "navhref rel"><span class="abs"></span>Home</a></li>
+              <li class="navli"><a href = "/portfolioclean/projects.html" class = "navhref rel"><span class="abs"></span>Projects</a></li>
+              <li class="navli"><a href = "/portfolioclean/services.html" class = "navhref rel active"><span class="abs"></span>Services</a></li>
+              <li class="navli"><a href = "/portfolioclean/process.html" class = "navhref rel"><span class="abs"></span>Process</a></li>
+              <li class="navli"><a href = "/portfolioclean/contact.html" class = "navhref rel"><span class="abs"></span>Contact</a></li>
+            </ul>
+          </div>
+          <div class="resnav">
+            <i class="fas fa-bars barslogo"></i>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="inrcontainer">
+            <div class="servicetext1">My Services</div>
+            <div class="servicetext2">
+              Everything I offer with a detailed overview of each.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p3room2 p3rooms">
+        <div class="inrp3room2">
+          <div class="serviceleftA">
+            <i class="far fa-object-group serviceicon"></i>
+          </div>
+          <div class="servicerightA">
+            <div class="servicetitle1">Web Design</div>
+            <div class="servicetitle2">User Focused</div>
+            <div class="servicedescr1">
+              A website should be designed for the people who will use it, so that's exactly what I do. 
+              User focused design should be the primary goal of any website.
+            </div>
+            <div class="servicetitle2">eCommerce</div>
+            <div class="servicedescr1">
+              Creating a good online store can be hard. Over the years I've learned the best ways to design 
+              stores that sell products and provide real value to customers.
+            </div>
+            <div class="servicetitle2">Application UI</div>
+            <div class="servicedescr1">
+              The user interface of an application, whether it's mobile or desktop, can make or break a business. 
+              Getting the interface right and most importantly of all, making it easy to navigate, 
+              are the keys to a successful app.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p3room3 p3rooms">
+        <div class="inrp3room3">
+          <div class="serviceleftA">
+            <i class="far fa-object-group serviceicon"></i>
+          </div>
+          <div class="servicerightA">
+            <div class="servicetitle1">Web Development</div>
+            <div class="servicetitle2">HTML / CSS</div>
+            <div class="servicedescr1">
+              Creating a strong foundation for a website means getting the HTML and CSS architecture right. 
+              If you've got a design I can create the front-end code for it.
+            </div>
+            <div class="servicetitle2">WordPress</div>
+            <div class="servicedescr1">
+              Almost all of the websites I make are done using WordPress and the reason is simple: 
+              It just works. You can easily update every piece of content, turn sections on or off and so much more.
+            </div>
+            <div class="servicetitle2">Performance</div>
+            <div class="servicedescr1">
+              Having a fast website is key to keeping people around which ultimately converts them into customers. 
+              There are a myriad of techniques involved in making a fast website, 
+              all of which I've spent years learning. I build these techniques into every site 
+              I code and can also offer this as a standalone service for existing websites.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p1room4 p1rooms">
+        <div class="inrp1room4">
+          <div class="footerleft">
+            <div class="footertext1">
+              Let's Work Together
+            </div>
+            <div class="footertext2">
+              Have a project you'd like to discuss?
+            </div>
+            <div class="footerbtnbox rel">
+              <a href = "#" class = "footerbtnA border0  abs">Get in Touch</a> 
+              <a href = "/portfolioclean/contact.html" class = "footerbtnB border0  abs">Get in Touch</a> 
+            </div>
+          </div>
+          <div class="footerright">
+            <div class="footerlinkbox">
+              <i class="fas fa-envelope linkicon"></i>
+              herethapamager@gmail.com
+            </div>
+            <div class="footerlinkbox">
+              <i class="fab fa-facebook-f linkicon linkiconfb"></i>
+              ON FACEBOOK
+            </div>
+            <div class="footerlinkbox">
+              <i class="fab fa-instagram linkicon"></i>
+              ON INSTAGRAM
+            </div>
+            <div class="footerlinkbox">
+              <i class="fab fa-github linkicon"></i>
+              ON GITHUB
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerbottom">
+        © 2021 Kritesh Thapa. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
